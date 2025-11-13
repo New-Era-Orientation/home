@@ -2,7 +2,7 @@
   "name": "home",
   "version": "1.0.0",
   "private": false,
-  "homepage": "https://New-Era-Orientation.github.io/home",
+  "homepage": "https://New-Era-Orientation.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
