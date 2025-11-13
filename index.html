@@ -22,8 +22,17 @@
   }
 }
 </script>
-<link rel="stylesheet" href="./index.css">
-</head>
+    <script>
+      // inject index.css at runtime so the build won't require the file
+      (function () {
+        const href = './index.css';
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = href;
+        document.head.appendChild(link);
+      })();
+    </script>
+  </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
